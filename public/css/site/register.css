@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+
+.title-container {
+    display: flex;
+    width: 25%;
+    height: 15vh;
+    margin-top: -20%;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.title-text {
+    font-size: 18px;
+    font-family: "Sixtyfour", sans-serif;
+}
+.container-form {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: -2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #5a5353;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil */
+}
+
+/* Estilo para o formulário dentro do container */
+.forms {
+    width: 55%;
+    height: 90vh;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; /* Aumentei o valor para um arredondamento mais suave */
+    background-color: #dad7d7; /* Alterei para um fundo branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil */
+    font-family: "Sixtyfour", sans-serif;
+}
+
+/* Restante do seu código permanece inalterado */
+.label-text {
+    padding-left: 3%;
+    padding-bottom: 0.5%;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.input-form {
+    border: 1px solid #0a0a0a;
+    padding: 8px; /* Aumentei o valor para um espaçamento mais consistente */
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Estilo para o select */
+.select-form {
+    padding: 8px; /* Aumentei o valor para um espaçamento mais consistente */
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+
+    color: #070707;
+}
+#button-form {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 1%;
+    font-weight: bold;
+    font-family: "Sixtyfour", sans-serif;
+    background-color: #dddcdc;
+    border: 1px solid #080808;
+}
+
+#button-form:hover {
+    background-color: #1a1b1f;
+    color: #ccc;
+    font-weight: bold;
+    cursor: pointer;
+}
