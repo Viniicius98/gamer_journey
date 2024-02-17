@@ -1,3 +1,3 @@
 
 
-<img class="menu-image" src="{{asset($image)}}" />
+<img class="menu-image" src="{{asset("img/logo.png")}}" />

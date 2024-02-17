@@ -5,26 +5,30 @@
     width: 25%;
     height: 15vh;
     margin-top: -20%;
-    margin-right: 5%;
+    margin-right: 7%;
     justify-content: center;
     align-items: center;
+    text-wrap: wrap;
+    line-height: 2.1;
 }
 .title-text {
     font-size: 18px;
     font-family: "Sixtyfour", sans-serif;
+    color: #ccc;
 }
+
 .container-form {
     width: 80%;
     height: 100vh;
     margin: auto;
-    margin-top: -2%;
+    margin-top: 8%;
     margin-bottom: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: #5a5353;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil */
+    background-color: #213328;
+    border: 5px solid #222020;
 }
 
 /* Estilo para o formulário dentro do container */
@@ -35,8 +39,9 @@
     display: flex;
     flex-direction: column;
     border-radius: 15px; /* Aumentei o valor para um arredondamento mais suave */
-    background-color: #dad7d7; /* Alterei para um fundo branco */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra sutil */
+    background-color: #1aab51; /* Alterei para um fundo branco */
+    border: 5px solid #e0d9d9;
+    box-shadow: 0 2px 4px rgba(170, 168, 168, 0.521); /* Adicionei uma sombra sutil */
     font-family: "Sixtyfour", sans-serif;
 }
 
@@ -68,7 +73,6 @@
     border-radius: 5px;
     font-size: 14px;
     outline: none;
-
     color: #070707;
 }
 #button-form {

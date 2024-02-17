@@ -1,14 +1,13 @@
 @extends('site.layouts.basic')
 
 @section('title','Cadastrar')
-@section('title2','Cadastro')
+
 
 @section('content')
-    @component('site.layouts._components.icon',['image'=>'img/home.png'])
-    @endcomponent
+    
     <div class="container-form">
         <div class="title-container">
-            <h2 class="title-text">Registre sua história</h2>
+            <h2 class="title-text">Registre-se para iniciar sua jornada</h2>
         </div>
         <form class = "forms">
             <label class="label-text"> Nome </label>
@@ -40,5 +39,7 @@
             <input class="input-form"  name="password" type="password" placeholder="Digite sua senha">
             <button id="button-form" type="submit">Cadastrar</button>
         </form>
+
+        
     </div>
 @endsection
