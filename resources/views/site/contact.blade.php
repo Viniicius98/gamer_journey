@@ -19,7 +19,7 @@
             <h2 class='text-title'>Redes sociais</h2>
             <p>Voce pode entrar em contato pelas nossas redes sociais</p>
             <a href='{{route('site.contact')}}'><img src="{{asset('img/facebook.png')}}"></a>
-            <a href='{{route('site.contact')}}'><img src="{{asset('img/linkedin.png')}}"></a>
+            <a href='https://www.linkedin.com/in/viniciusssilva98/'><img src="{{asset('img/linkedin.png')}}"></a>
             <a href='{{route('site.contact')}}'><img src="{{asset('img/youtube.png')}}"></a>
         </div>
 
