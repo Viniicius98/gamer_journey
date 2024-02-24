@@ -1,4 +1,4 @@
-const register = document.querySelector('li[name="register"]');
+const index = document.querySelector('li[name="index"]');
 const contact = document.querySelector('li[name="contact"]');
 const aboutUs = document.querySelector('li[name="about-us"]');
 
@@ -7,7 +7,7 @@ const currentPage = window.location.pathname;
 switch (currentPage) {
     case "/":
         // home.style.backgroundColor = '#B91C22';
-        register.style.color = "#fff";
+        index.style.color = "#fff";
         break;
     case "/about-us":
         // aboutus.style.backgroundColor = '#B91C22';

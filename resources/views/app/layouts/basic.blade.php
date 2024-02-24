@@ -5,12 +5,9 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="{{asset('css/global.css')}}">
         <link rel="stylesheet" href="{{asset('css/_components/logo.css')}}">
-        <link rel="stylesheet" href="{{asset('css/site/index.css')}}">
-        <link rel="stylesheet" href="{{asset('css/site/login.css')}}">
-        <link rel="stylesheet" href="{{asset('css/site/register.css')}}">
-        <link rel="stylesheet" href="{{asset('css/site/contact.css')}}">
-        <link rel="stylesheet" href="{{asset('css/site/about-us.css')}}">
-        <link rel="stylesheet" href="{{asset('css/site/_partials/partials.css')}}">
+        <link rel="stylesheet" href="{{asset('css/app/_partials/_partials.css')}}">
+        <link rel="stylesheet" href="{{asset('css/app/home.css')}}">
+       
         
         <link rel="icon" href="{{asset('img/icon.ico')}}" type="image/x-icon">
         <!-- No cabeçalho do seu documento HTML (adapte o URL conforme necessário) -->
@@ -19,12 +16,10 @@
 
     <body>
 
-        @include('site.layouts._partials.top')
+        @include('app.layouts._partials.top')
         @yield('content')
         @include('site.layouts._partials.bottom')
         
-
-       
     </body>
-   <script src="{{asset('js/index.js')}}"></script>
+
 </html>

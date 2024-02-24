@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Console;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
@@ -36,9 +37,20 @@ class RegisterController extends Controller
 
         $request->validate($rules,$feedback);
 
-        User::create($request->all());
+        $user = User::create([
+            'name' => $request->input('name'),
+            'birth' => $request->input('birth'),
+            'age' => $request->input('age'),
+            'pref_console' => $request->input('pref_console'),
+            'gender' => $request->input('gender'),
+            'email' => $request->input('email'),
+            'password' => Hash::make($request->input('password')),
+            
+        ]);
 
-        return 'Registro feito';
+        return view('site.login');
 
     }
+
+    
 }
