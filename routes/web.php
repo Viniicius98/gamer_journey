@@ -14,9 +14,11 @@ Route::get('/about-us','App\Http\Controllers\AboutUsController@aboutus')->name('
 
 Route::middleware('authentication')->prefix('/journey')->group(function(){
     Route::get('/home','App\Http\Controllers\HomeController@index')->name('app.home');
-    Route::get('/register-game','App\Http\Controllers\RegisterGameController@index')->name('app.register-game');
+    Route::get('/register-game/{message?}','App\Http\Controllers\RegisterGameController@index')->name('app.register-game');
+    Route::post('/register-game/save','App\Http\Controllers\RegisterGameController@save')->name('app.register-game.save');
     Route::get('/logout','App\Http\Controllers\LoginController@logout')->name('app.logout');
 });
+
 
 Route::fallback('App\Http\Controllers\FallbackController@fallback');
 

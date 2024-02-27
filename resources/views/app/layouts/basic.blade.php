@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="{{asset('css/_components/logo.css')}}">
         <link rel="stylesheet" href="{{asset('css/app/_partials/_partials.css')}}">
         <link rel="stylesheet" href="{{asset('css/app/home.css')}}">
-       
+        <link rel="stylesheet" href="{{asset('css/app/register-game.css')}}">
         
         <link rel="icon" href="{{asset('img/icon.ico')}}" type="image/x-icon">
         <!-- No cabeçalho do seu documento HTML (adapte o URL conforme necessário) -->
