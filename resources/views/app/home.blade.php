@@ -5,8 +5,16 @@
 @section('title','Home')
 
 @section('content')
+    <div class="home-link">
+        <ul>
+            <a href="{{route('game.create')}}"><li>Adicionar Jogo</li></a>
+            <a href="{{route('game.index')}}"><li>Procurar Jogo</li></a>
+            <a href=""><li>Excluir Jogo</li></a>
+        </ul>
     
+    </div>
     <section id="container-main">
+        
         <section class="menu-up">
             <h3 class="text-home">Ultimos Jogos Zerados</h3>
             <div class="games-list">

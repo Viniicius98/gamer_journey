@@ -11,7 +11,7 @@
           @endcomponent
           <p class="home-welcome">Bem vindo {{$name}}</p>
           <li name="home"><a href="{{route('app.home')}}">Home</a></li>
-          <li name="register-game"><a href="{{route('app.register-game')}}">Registar Jogo</a></li>
+          <li name="register-game"><a href="">Meus Jogos</a></li>
           <li name="logout"><a href="{{route('app.logout')}}">Sair</a></li>
         </ul>
       </div>

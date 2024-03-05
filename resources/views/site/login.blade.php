@@ -11,7 +11,7 @@
          @csrf
          <input class="login-input" name="user" type="text" placeholder="Usuário" >
          <span class="error-message-login">{{$errors->has('user')? $errors->first('user'):''}}</span>
-         <input class="login-input" name="password" type="password" placeholder="Senhas" > 
+         <input class="login-input" name="password" type="password" placeholder="Senha" > 
          <span class="error-message-login">{{$errors->has('password')? $errors->first('password'):''}}</span>
          <button class="login-button">Acessar</button>
       </form>
