@@ -12,7 +12,7 @@
         <h2>{{ $message ?? '' }}</h2>
         <form class="register-form" action="{{route('game.store')}}" method="post">
             @csrf
-            <input name="user_id" type="hidden" value="1" placeholder="Jogo">
+            <input name="user_id" type="hidden" value={{$user_id}} placeholder="Jogo">
             <input name="game" type="text" placeholder="Jogo">
             <span class="error-message">{{$errors->has('game')? $errors->first('game'):''}}</span>
             <select name="console_id" >

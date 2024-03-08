@@ -39,11 +39,14 @@ class LoginController extends Controller
         $email = $request->get('user');
         $password = $request->get('password');
 
+
         $user = User::where('email', $email)->first();
         
         if ($user && Hash::check($password, $user->password)) {
             
-            session(['name' => $user->name, 'email' => $user->email]);
+            session(['name' => $user->name, 'email' => $user->email,'user_id'=> $user->id]);
+            
+        
             return redirect()->route('app.home');
         } else {
             

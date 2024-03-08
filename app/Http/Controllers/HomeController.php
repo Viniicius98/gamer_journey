@@ -7,11 +7,12 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index () {
+    public function index (Request $request) {
+        $id = $request->session()->get('user_id');
 
-        $lastGames = UserGame::orderBy('end','desc')->limit(5)->get();
-        $bestGames = UserGame::orderBy('rating','desc')->limit(5)->get();
-        $worstGames = UserGame::orderBy('rating','asc')->limit(5)->get();
+        $lastGames = UserGame::where('user_id',$id)->orderBy('end','desc')->limit(5)->get();
+        $bestGames = UserGame::where('user_id',$id)->orderBy('rating','desc')->limit(5)->get();
+        $worstGames = UserGame::where('user_id',$id)->orderBy('rating','asc')->limit(5)->get();
 
 
 

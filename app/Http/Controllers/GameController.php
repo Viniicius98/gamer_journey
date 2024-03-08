@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Console;
+use App\Models\User;
 use App\Models\UserGame;
 use Illuminate\Http\Request;
 
@@ -13,9 +14,15 @@ class GameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-       return view('app.search');
+        $id = $request->session()->get('user_id');
+
+        $games = UserGame::where('user_id',$id)->orderBy('end','desc')->paginate(10);
+
+      
+        
+       return view('app.my-games',['games'=>$games,'request'=>$request->all()]);
     }
 
     /**
@@ -23,9 +30,11 @@ class GameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
         $message = request('message');
+
+        $id = $request->session()->get('user_id');
 
         $consoles = Console::all();
 
@@ -39,7 +48,7 @@ class GameController extends Controller
 
 
         
-        return view ('app.register-game',['message'=> $message,'consoles'=>$consoles]);
+        return view ('app.register-game',['message'=> $message,'consoles'=>$consoles,'user_id'=>$id]);
     }
 
     /**
@@ -89,7 +98,7 @@ class GameController extends Controller
      */
     public function show(UserGame $game)
     {
-        return view('app.edit-game');
+        return view ('app.game-show',['game'=>$game]);
     }
 
     /**
@@ -98,9 +107,11 @@ class GameController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(UserGame $game)
+    public function edit(UserGame $game, Request $request)
     {
-        
+        $id = $request->session()->get('user_id');
+        $consoles = Console::all();
+        return view('app.game-edit',['game'=>$game,'consoles' => $consoles,'user_id'=>$id]);
     }
 
     /**
@@ -110,9 +121,13 @@ class GameController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, UserGame $game)
     {
-        //
+        $request->all();
+
+        $game->update($request->all());
+
+        return redirect()->route('game.show',['game'=>$game->id]);
     }
 
     /**
@@ -121,8 +136,10 @@ class GameController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(UserGame $game)
     {
-        //
+        $game->delete();
+
+        return redirect()->route('game.index',['game'=>$game->id]);
     }
 }
