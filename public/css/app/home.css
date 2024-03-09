@@ -1,39 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Sriracha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
 
-.home-link {
-    width: 60%;
-    height: 20vh;
-    margin-top: 10%;
-    margin-left: 20%;
-    border-radius: 2%;
-    display: flex;
-    align-items: center;
-    background-color: #286ca3;
-    border: groove 2px #000;
-}
-.home-link ul {
-    display: flex;
-    flex-direction: row;
-}
-.home-link li {
-    width: 100%;
-    height: 5vh;
-    padding: 2%;
-    margin-left: 50px;
-    margin-right: 25px;
-    list-style: none;
-    font-size: 14px;
-    transition: transform 0.3s ease;
-}
-.home-link li:hover {
-    cursor: pointer;
-    font-weight: bold;
-    transform: scale(1.2);
-}
 #container-main {
     margin: 2% 5% 3% 5%;
     width: 90%;
@@ -45,6 +11,7 @@
     justify-content: center;
     border-radius: 5px;
     border: solid 5px #333;
+    font-family: "Sixtyfour", sans-serif;
 }
 
 .text-home {
@@ -75,7 +42,6 @@
     border-top: 3px groove #000;
     border-bottom: 3px groove #000;
 }
-
 .last-games {
     display: flex;
     flex-direction: row;
@@ -105,55 +71,17 @@
     transition: transform 0.3s ease;
 }
 .last-games > li:hover {
-    color: #eac142;
     cursor: pointer;
     background: #fff2cc;
     border: 2px double #333;
     border-radius: 5px;
     transform: scale(1.2);
 }
-.last-games > li > span {
-    margin-top: 4px;
+.last-games > li > a {
+    color: #000;
 }
-
-/* Estilos para o modal */
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.7
-    ); /* Cor de fundo escura com transparência */
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center; /* Centraliza o conteúdo dentro do modal */
-}
-
-/* Estilos para o botão "Fechar" */
-.close-modal {
-    cursor: pointer;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.close-modal:hover {
-    background-color: #555;
+.nota-games > li > a {
+    color: #000;
 }
 
 .nota-games {

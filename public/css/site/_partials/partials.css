@@ -43,16 +43,9 @@
     cursor: pointer;
     transform: scale(1.2);
 }
-.footer {
-    background-color: #e4e2e2;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    color: #555;
-}
-
-.footer-content {
-    margin-bottom: 10px;
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .social-container {

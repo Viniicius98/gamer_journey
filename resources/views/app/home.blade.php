@@ -4,23 +4,14 @@
 
 @section('title','Home')
 
-@section('content')
-    <div class="home-link">
-        <ul>
-            <a href="{{route('game.create')}}"><li>Adicionar Jogo</li></a>
-            <a href="{{route('game.index')}}"><li>Procurar Jogo</li></a>
-            <a href=""><li>Excluir Jogo</li></a>
-        </ul>
-    
-    </div>
+@section('content') 
     <section id="container-main">
-        
         <section class="menu-up">
             <h3 class="text-home">Ultimos Jogos Zerados</h3>
             <div class="games-list">
                 <ul id="lastGames" class="last-games">
                     @foreach ( $lastGames as $lastGame)
-                        <li>{{$lastGame->game}}</li>
+                        <li><a class="no-underline" href="{{route('game.show',['game'=>$lastGame->id])}}">{{$lastGame->game}}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -31,7 +22,7 @@
             <div class="games-list">
                 <ul id="topGames" class="nota-games">
                     @foreach ( $bestGames as $bestGame)
-                        <li>{{$bestGame->game}}</li>
+                        <li><a class="no-underline" href="{{route('game.show',['game'=>$bestGame->id])}}">{{$bestGame->game}}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -42,7 +33,7 @@
             <div class="games-list">
                 <ul id="worstGame" class="nota-games">
                     @foreach ( $worstGames as $worstGame)
-                        <li>{{$worstGame->game}}</li>
+                        <li><a class="no-underline" href="{{route('game.show',['game'=>$worstGame->id])}}">{{$worstGame->game}}</a></li>
                     @endforeach
                 </ul>
             </div>

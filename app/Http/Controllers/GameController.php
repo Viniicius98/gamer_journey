@@ -96,8 +96,13 @@ class GameController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(UserGame $game)
+    public function show(UserGame $game, Request $request)
     {
+        $id = $request->session()->get('user_id');
+
+        if ($game->user_id != $id) {
+            return view('fallback');
+        } 
         return view ('app.game-show',['game'=>$game]);
     }
 
@@ -110,6 +115,10 @@ class GameController extends Controller
     public function edit(UserGame $game, Request $request)
     {
         $id = $request->session()->get('user_id');
+
+        if ($game->user_id != $id) {
+            return view('fallback');
+        } 
         $consoles = Console::all();
         return view('app.game-edit',['game'=>$game,'consoles' => $consoles,'user_id'=>$id]);
     }
@@ -123,6 +132,35 @@ class GameController extends Controller
      */
     public function update(Request $request, UserGame $game)
     {
+        $id = $request->session()->get('user_id');
+
+        if ($game->user_id != $id) {
+            return view('fallback');
+        } 
+
+        $rules = [
+            'game' => 'required|min:3|max:50',
+            'console_id' => 'exists:consoles,id',
+            'start' => 'date',
+            'end' => ['date', 'after:start'],
+            'review' => 'required|min:5|max:100',
+            'rating' => 'required'
+        ];
+        $feedback = [
+            'required' => 'O campo :attribute deve ser preenchido',
+            'game.min' => 'O campo game deve ter no mínimo 3 caracteres',
+            'game.max' => 'O campo game deve ter no máximo 50 caracteres',
+            'console_id.exists' => 'O console informado não existe',
+            'start.date' => 'O campo Inicio deve ter uma data válida',
+            'end.date' => 'O campo Fim deve ter uma data valida',
+            'end.after' => 'A data fim deve ser maior do que a data de Inicio',
+            'review.min' => 'O campo game deve ter no mínimo 5 caracteres',
+            'review.max' => 'O campo game deve ter no maximo 100 caracteres',
+            
+        ];
+
+        $request->validate($rules,$feedback);
+
         $request->all();
 
         $game->update($request->all());

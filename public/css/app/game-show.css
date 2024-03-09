@@ -1,24 +1,24 @@
-.conteudo-pagina {
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+
+.game-show-edit {
     width: 100%;
     height: 100%;
     text-align: center;
     margin-bottom: 100px;
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
 }
-.titulo-pagina {
-    padding: 100px 0px 60px 0px;
-    background-color: #2a9ee2;
-    text-align: center;
-}
-.titulo-pagina-2 {
-    padding: 70px 0px 10px 0px;
-    margin-bottom: 10px;
-    background-color: #2a9ee2;
-    text-align: center;
+.game-show-edit h5 {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .informacao-pagina {
+    display: flex;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 3%;
+    justify-content: center;
 }
 
 .informacao-pagina p {

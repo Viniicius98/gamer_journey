@@ -8,23 +8,33 @@ body {
     font: inherit;
     vertical-align: baseline;
     overflow: auto;
-    background-color: #f8f8f8;
     text-wrap: nowrap;
     font-family: "Sixtyfour", sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
 .footer {
     background-color: #e4e2e2;
     padding: 20px;
     text-align: center;
     font-size: 14px;
     color: #555;
+    font-family: "Sixtyfour", sans-serif;
 }
 
 .footer-content {
     margin-bottom: 10px;
+}
+.footer-content > p > a {
+    text-decoration: none;
+    color: #555;
+}
+
+.custom-font {
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.no-underline {
+    text-decoration: none;
 }

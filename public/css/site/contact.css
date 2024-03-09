@@ -38,6 +38,14 @@
     width: 45px;
 }
 
+.contact-chat a {
+    text-decoration: none;
+    color: #333;
+}
+.contact-email p > a {
+    text-decoration: none;
+    color: #333;
+}
 .social-media-img,
 .contact-email img,
 .contact-chat img {

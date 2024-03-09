@@ -11,6 +11,7 @@ class HomeController extends Controller
         $id = $request->session()->get('user_id');
 
         $lastGames = UserGame::where('user_id',$id)->orderBy('end','desc')->limit(5)->get();
+        
         $bestGames = UserGame::where('user_id',$id)->orderBy('rating','desc')->limit(5)->get();
         $worstGames = UserGame::where('user_id',$id)->orderBy('rating','asc')->limit(5)->get();
 

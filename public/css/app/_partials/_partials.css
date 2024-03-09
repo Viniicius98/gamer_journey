@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+
 .top-container-user {
     width: 100%;
     display: flex;
@@ -52,4 +54,9 @@
     color: #fff;
     cursor: pointer;
     transform: scale(1.2);
+}
+.game-show-nav {
+    display: flex;
+    margin-top: 8%;
+    justify-content: center;
 }

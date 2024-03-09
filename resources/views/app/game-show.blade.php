@@ -1,49 +1,33 @@
 @extends('app.layouts.basic')
 
-@section('title', 'game')
+@section('title', 'Meu Jogo')
 
 @section('content')
 
-    <div class="conteudo-pagina">
-
-        <div class="titulo-pagina-2">
-            <p>Visualizar game</p>
-        </div>
-
-        <div class="menu">
-            <ul>
-                <li><a href="{{ route('game.index') }}">Voltar</a></li>
-                <li><a href="{{ route('game.index') }}">Consulta</a></li>
-            </ul>
-        </div>
-
+    <div class="game-show-edit">
         <div class="informacao-pagina">
-            <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                <table border="1" style="text-align:left">
-                    <tr>
-                        <td>ID:</td>
-                        <td>{{$game->id}}</td>
-                    </tr>
-                    <tr>
-                        <td>Nome:</td>
-                        <td>{{$game->game}}</td>
-                    </tr>
-                    <tr>
-                        <td>Descrição:</td>
-                        <td>{{$game->descricao}}</td>
-                    </tr>
-                    <tr>
-                        <td>Peso:</td>
-                        <td>{{$game->peso}} kg</td>
-                    </tr>
-                    <tr>
-                        <td>Unidade de Medida:</td>
-                        <td>{{$game->unidade_id}}</td>
-                    </tr>
-                </table>
+            <div class="card w-50 ">
+                <div class="card-header">
+                    {{$game->game}}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Console: {{$game->consoles->console}}</h5>
+                    <p class="card-text">Iniciado em: {{date('d/m/Y',strtotime($game->start))}}</p>
+                    <p class="card-text">Zerado em: {{date('d/m/Y',strtotime($game->end))}}</p>
+                    <p class="card-text">Nota: {{$game->rating}}</p>
+                    <p class="card-text">{{$game->review}}</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{{ route('game.edit', ['game' => $game->id]) }}" class="btn btn-primary mx-2">Editar</a>
+                        <form id="form_{{$game->id}}" method="post" action="{{ route('game.destroy', ['game' => $game->id]) }}">
+                            @method('DELETE')
+                            @csrf
+                            <button type="submit" class="btn btn-danger mx-2">Excluir</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
+
 
 @endsection
