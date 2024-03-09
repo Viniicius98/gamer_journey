@@ -50,6 +50,7 @@ Gamer Journey é uma aplicação web em fase de desenvolvimento, criada em PHP c
 -   PHP
 -   Laravel
 -   MySQL
+-   Bootstrap
 
 ## Licença
 
