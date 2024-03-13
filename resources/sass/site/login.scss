@@ -1,0 +1,72 @@
+@import "../_colors";
+@import "../_fonts";
+@import "../_mixins";
+
+.container-login {
+    @include flexCenter;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    background-color: $background-xbox;
+    border: 5px solid $simple-black;
+    form {
+        width: 40%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px; /* Aumentei o valor para um arredondamento mais suave */
+        background-color: $simple-white; /* Alterei para um fundo branco */
+        border: 5px solid $simple-black;
+        box-shadow: 0 2px 4px rgba(170, 168, 168, 0.521); /* Adicionei uma sombra sutil */
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            color: $simple-black;
+            margin-top: 20%;
+            margin-left: 25%;
+        }
+        input {
+            width: 90%;
+            margin: 10% 0% -5% 5%;
+            padding: 2%;
+            box-sizing: border-box;
+            border-radius: 3px;
+            background-color: transparent;
+            color: $simple-black;
+            font-family: $primary-font;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        button {
+            width: 90%;
+            margin: 3% 0% -5% 5%;
+            padding: 2%;
+            cursor: pointer;
+            background-color: transparent;
+            color: $simple-black;
+            font-family: $primary-font;
+            font-weight: bold;
+            &:hover {
+                background-color: $simple-black;
+                color: $simple-white;
+            }
+        }
+        span {
+            @include flexCenter;
+            color: #c21408;
+            margin-bottom: 20px;
+            text-align: center;
+            margin-top: 8%;
+            font-size: 11px;
+        }
+    }
+}
+.message-login {
+    display: flex;
+    justify-content: center;
+    color: #c21408;
+    margin-bottom: 20px;
+}

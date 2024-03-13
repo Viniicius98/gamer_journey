@@ -8,11 +8,11 @@
    <div class='index-container'>
        
             <div class='r-container'>
-                <a href="{{route('site.login')}}"><button class='index-button'>Login</button></a>
+                <a href="{{route('site.login')}}"><button >Login</button></a>
             </div>
        
             <div class='l-container'>
-                <a href="{{route('site.register')}}"><button class='index-button'>Cadastre-se</button></a>
+                <a href="{{route('site.register')}}"><button >Cadastre-se</button></a>
             </div>
         
    </div>

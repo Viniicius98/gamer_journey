@@ -1,0 +1,98 @@
+@import "../mixins";
+@import "../colors";
+@import "../fonts";
+
+.container-form {
+    @include flexCenter;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    background-color: $background-xbox;
+    border: 5px solid $simple-black;
+    form {
+        width: 55%;
+        height: 90vh;
+        padding-top: 2%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-color: #1aab51;
+        border: 5px solid #e0d9d9;
+        box-shadow: 0 2px 4px rgba(170, 168, 168, 0.521); /* Adicionei uma sombra sutil */
+        font-family: $primary-font;
+        label {
+            padding-left: 3%;
+            padding-bottom: 0.5%;
+            color: $simple-black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        input {
+            border: 1px solid $simple-black;
+            padding: 8px; /* Aumentei o valor para um espaçamento mais consistente */
+            margin-left: 3%;
+            margin-right: 3%;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: bold;
+            outline: none;
+            font-family: $primary-font;
+        }
+        select {
+            padding: 8px; /* Aumentei o valor para um espaçamento mais consistente */
+            margin-left: 3%;
+            margin-right: 3%;
+            border: 1px solid $simple-black;
+            border-radius: 5px;
+            font-size: 11px;
+            font-weight: bold;
+            outline: none;
+            color: $simple-black;
+            font-family: $primary-font;
+            option {
+                font-weight: bold;
+            }
+        }
+        button {
+            width: 50%;
+            margin-top: 5%;
+            margin-left: 25%;
+            margin-bottom: 3%;
+            font-size: 14px;
+            border-radius: 5px;
+            padding: 1%;
+            font-weight: bold;
+            font-family: "Sixtyfour", sans-serif;
+            background-color: $simple-white;
+            border: 1px solid $simple-black;
+            &:hover {
+                background-color: $simple-black;
+                color: $simple-white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        span {
+            color: red;
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+
+.title-container {
+    @include flexCenter;
+    width: 25%;
+    height: 15vh;
+    margin-top: -20%;
+    margin-right: 7%;
+    text-wrap: wrap;
+    line-height: 2.1;
+    h2 {
+        font-size: 18px;
+        color: $simple-white;
+    }
+}

@@ -1,1 +1,404 @@
+@import url(https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap);
 
+.footer {
+    background-color: #e7e7e5;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #030101;
+    font-family: "Sixtyfour", sans-serif;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+.footer-content a {
+    text-decoration: none;
+    color: #030101;
+}
+
+#header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu {
+    margin-top: -18px;
+    margin-right: 5%;
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+}
+.menu ul {
+    margin-top: 1.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 5px;
+    border-top: solid 1px #030101;
+    border-bottom: solid 2px #030101;
+    background-color: #030101;
+}
+.menu ul li {
+    margin: 10px;
+    width: 100px;
+    margin-right: 5%;
+    height: 8vh;
+    font-size: 15px;
+    border-radius: 10px;
+    line-height: 8vh;
+    text-align: center;
+    color: #e7e7e5;
+    font-weight: bold;
+    list-style: none;
+    transition: transform 0.3s ease;
+}
+.menu ul li:hover {
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #e7e7e5;
+}
+
+.logo-image {
+    margin-top: 0px;
+    width: 80px;
+    height: 70px;
+    margin-right: 56%;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    margin-top: 2%;
+    margin-bottom: 2.8%;
+    flex-direction: row;
+    background-color: #192b19;
+    border-radius: 8%;
+    font-size: 12px;
+}
+.index-container button {
+    width: 17vw;
+    height: 30vh;
+    padding: 10%;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "Sixtyfour", sans-serif;
+    border: none;
+    background-color: #e7e7e5;
+}
+.index-container button:hover {
+    cursor: pointer;
+}
+
+.text-title-index {
+    font-size: 36px;
+    color: #030101;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.r-container,
+.l-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 50%;
+    background-color: #e7e7e5;
+    margin: auto;
+    border-radius: 5%;
+    border: solid 5px #030101;
+    color: #030101;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.about-us-container {
+    margin-top: 5%;
+    padding: 20px;
+    background-color: #e7e7e5;
+    border-radius: 8px;
+    text-wrap: wrap;
+    box-shadow: 0 0 10px #030101;
+}
+.about-us-container h1 {
+    color: #030101;
+    font-size: 25px;
+}
+.about-us-container p {
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.text-title2 {
+    font-size: 36px;
+    color: #030101;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold; /* Define a espessura da fonte como negrito */
+    letter-spacing: 2px; /* Adiciona espaçamento entre as letras */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    margin-top: 4%;
+    margin-bottom: 2.8%;
+    flex-direction: row;
+    background-color: #030101;
+    border-radius: 8%;
+    font-size: 12px;
+}
+
+.contact-email,
+.contact-social-media,
+.contact-chat {
+    width: 20%;
+    height: 25%;
+    margin: 15px 15px 0px 15px;
+    padding: 5%;
+    line-height: 3vh;
+    text-wrap: wrap;
+    border-radius: 10%;
+    background-color: #e7e7e5;
+}
+
+.contact-social-media img,
+.contact-email img,
+.contact-chat img {
+    width: 45px;
+}
+
+.contact-chat a {
+    text-decoration: none;
+    color: #030101;
+}
+
+.contact-email p > a {
+    text-decoration: none;
+    color: #030101;
+}
+
+.social-media-img,
+.contact-email img,
+.contact-chat img {
+    margin-top: -20%;
+}
+
+.social-media-img {
+    margin-top: -70%;
+}
+
+.text-title {
+    margin-top: 0%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    background-color: #192b19;
+    border: 5px solid #030101;
+}
+.container-login form {
+    width: 40%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px; /* Aumentei o valor para um arredondamento mais suave */
+    background-color: #e7e7e5; /* Alterei para um fundo branco */
+    border: 5px solid #030101;
+    box-shadow: 0 2px 4px rgba(170, 168, 168, 0.521); /* Adicionei uma sombra sutil */
+}
+.container-login form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #030101;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+.container-login form input {
+    width: 90%;
+    margin: 10% 0% -5% 5%;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #030101;
+    font-family: "Sixtyfour", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+.container-login form button {
+    width: 90%;
+    margin: 3% 0% -5% 5%;
+    padding: 2%;
+    cursor: pointer;
+    background-color: transparent;
+    color: #030101;
+    font-family: "Sixtyfour", sans-serif;
+    font-weight: bold;
+}
+.container-login form button:hover {
+    background-color: #030101;
+    color: #e7e7e5;
+}
+.container-login form span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #c21408;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 8%;
+    font-size: 11px;
+}
+
+.message-login {
+    display: flex;
+    justify-content: center;
+    color: #c21408;
+    margin-bottom: 20px;
+}
+
+.container-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    background-color: #192b19;
+    border: 5px solid #030101;
+}
+.container-form form {
+    width: 55%;
+    height: 90vh;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #1aab51;
+    border: 5px solid #e0d9d9;
+    box-shadow: 0 2px 4px rgba(170, 168, 168, 0.521); /* Adicionei uma sombra sutil */
+    font-family: "Sixtyfour", sans-serif;
+}
+.container-form form label {
+    padding-left: 3%;
+    padding-bottom: 0.5%;
+    color: #030101;
+    font-size: 16px;
+    font-weight: bold;
+}
+.container-form form input {
+    border: 1px solid #030101;
+    padding: 8px; /* Aumentei o valor para um espaçamento mais consistente */
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    outline: none;
+    font-family: "Sixtyfour", sans-serif;
+}
+.container-form form select {
+    padding: 8px; /* Aumentei o valor para um espaçamento mais consistente */
+    margin-left: 3%;
+    margin-right: 3%;
+    border: 1px solid #030101;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: bold;
+    outline: none;
+    color: #030101;
+    font-family: "Sixtyfour", sans-serif;
+}
+.container-form form select option {
+    font-weight: bold;
+}
+.container-form form button {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-bottom: 3%;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 1%;
+    font-weight: bold;
+    font-family: "Sixtyfour", sans-serif;
+    background-color: #e7e7e5;
+    border: 1px solid #030101;
+}
+.container-form form button:hover {
+    background-color: #030101;
+    color: #e7e7e5;
+    font-weight: bold;
+    cursor: pointer;
+}
+.container-form form span {
+    color: red;
+    text-align: center;
+    margin: 0;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 15vh;
+    margin-top: -20%;
+    margin-right: 7%;
+    text-wrap: wrap;
+    line-height: 2.1;
+}
+.title-container h2 {
+    font-size: 18px;
+    color: #e7e7e5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    overflow: auto;
+    text-wrap: nowrap;
+    font-family: "Sixtyfour", sans-serif;
+}
+
+.custom-font {
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.no-underline {
+    text-decoration: none;
+}

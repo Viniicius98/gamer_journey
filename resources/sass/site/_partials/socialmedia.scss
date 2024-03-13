@@ -1,0 +1,24 @@
+@import "../../colors";
+@import "../../fonts";
+.social-container {
+    width: 100%;
+    font-size: 12px;
+    font-family: $primary-font;
+}
+.social-media,
+.contact-area,
+.localization {
+    width: 33.333%;
+    border-top: solid 1px #ccc;
+    float: left;
+    text-align: center;
+    background-color: $simple-white;
+    height: 250px;
+    p,
+    span {
+        color: $simple-black;
+    }
+    img {
+        margin: 0px 15px 0px 15px;
+    }
+}

@@ -1,0 +1,20 @@
+@import "../mixins";
+@import "../colors";
+@import "../fonts";
+
+.about-us-container {
+    margin-top: 5%;
+    padding: 20px;
+    background-color: $simple-white;
+    border-radius: 8px;
+    text-wrap: wrap;
+    box-shadow: 0 0 10px $simple-black;
+    h1 {
+        color: $simple-black;
+        font-size: 25px;
+    }
+    p {
+        line-height: 1.6;
+        font-size: 15px;
+    }
+}

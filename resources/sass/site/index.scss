@@ -1,0 +1,48 @@
+@import "../mixins";
+@import "../colors";
+@import "../fonts";
+
+.index-container {
+    @include flexCenter;
+    width: 100%;
+    height: 70vh;
+    margin-top: 2%;
+    margin-bottom: 2.8%;
+    flex-direction: row;
+    background-color: $background-xbox;
+    border-radius: 8%;
+    font-size: 12px;
+    button {
+        width: 17vw;
+        height: 30vh;
+        padding: 10%;
+        font-weight: bold;
+        font-size: 17px;
+        font-family: $primary-font;
+        border: none;
+        background-color: $simple-white;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.text-title-index {
+    font-size: 36px;
+    color: $simple-black;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+}
+.r-container,
+.l-container {
+    @include flexCenter;
+    width: 20%;
+    height: 50%;
+    background-color: $simple-white;
+    margin: auto;
+    border-radius: 5%;
+    border: solid 5px $simple-black;
+    color: $simple-black;
+    font-weight: bold;
+    font-size: 20px;
+}

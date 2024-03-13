@@ -1,6 +1,10 @@
+@import "../mixins";
+@import "../colors";
+@import "../fonts";
+
 .text-title2 {
     font-size: 36px;
-    color: #333;
+    color: $simple-black;
     text-align: center;
     margin-bottom: 20px;
     font-weight: bold; /* Define a espessura da fonte como negrito */
@@ -8,14 +12,13 @@
 }
 
 .contact-container {
-    margin-top: 4%;
-    margin-bottom: 2.8%;
+    @include flexCenter;
     width: 100%;
     height: 70vh;
-    display: flex;
+    margin-top: 4%;
+    margin-bottom: 2.8%;
     flex-direction: row;
-    align-items: center;
-    background-color: #192b19;
+    background-color: $simple-black;
     border-radius: 8%;
     font-size: 12px;
 }
@@ -29,9 +32,8 @@
     line-height: 3vh;
     text-wrap: wrap;
     border-radius: 10%;
-    background-color: #e7e7e5;
+    background-color: $simple-white;
 }
-
 .contact-social-media img,
 .contact-email img,
 .contact-chat img {
@@ -40,11 +42,11 @@
 
 .contact-chat a {
     text-decoration: none;
-    color: #333;
+    color: $simple-black;
 }
 .contact-email p > a {
     text-decoration: none;
-    color: #333;
+    color: $simple-black;
 }
 .social-media-img,
 .contact-email img,

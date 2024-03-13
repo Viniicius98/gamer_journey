@@ -1,0 +1,17 @@
+@import "../../colors";
+@import "../../fonts";
+.footer {
+    background-color: $simple-white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: $simple-black;
+    font-family: $primary-font;
+}
+.footer-content {
+    margin-bottom: 10px;
+    a {
+        text-decoration: none;
+        color: $simple-black;
+    }
+}
