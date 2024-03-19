@@ -1,4 +1,4 @@
-# Gamer Journey (Em Desenvolvimento)
+# Gamer Journey
 
 ## Sobre o Projeto
 
@@ -12,10 +12,6 @@ Gamer Journey é uma aplicação web em fase de desenvolvimento, criada em PHP c
 -   **Histórico Pessoal:** Tenha um histórico completo e personalizado de todos os jogos que você zerou, permitindo uma visão retrospectiva de suas realizações.
 -   ![image](https://github.com/Viniicius98/gamer_journey/assets/91093655/1b120fd1-57f7-4c7c-9908-7a4939dd4207)
 -   ![image](https://github.com/Viniicius98/gamer_journey/assets/91093655/14e9e33f-6681-4f5c-8c63-1b1ecc50595d)
-
-
-
--   **Compartilhamento Social:** Futuramente, será possível compartilhar suas conquistas com outros gamers.
 
 ## Como Usar (Durante o Desenvolvimento)
 
