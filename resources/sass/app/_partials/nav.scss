@@ -1,0 +1,60 @@
+@import "../../colors";
+@import "../../fonts";
+
+.top-container-user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.home-welcome {
+    margin-top: 2%;
+    margin-right: 20%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.logo-image {
+    margin-right: 5%;
+}
+
+.menu-user {
+    margin-top: -18px;
+    margin-right: 5%;
+    width: 100%;
+    height: 13vh;
+    position: fixed;
+    ul {
+        margin-top: 1.3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-radius: 5px;
+        border-top: solid 1px #737373;
+        border-bottom: solid 2px #737373;
+        background-color: #003087;
+        li {
+            margin: 10px;
+            width: 200px;
+            margin-right: 5%;
+            height: 8vh;
+            font-size: 15px;
+            border-radius: 10px;
+            line-height: 8vh;
+            text-align: center;
+            color: #b3b3b3;
+            font-weight: bold;
+            list-style: none;
+            transition: transform 0.3s ease;
+        }
+        :hover {
+            color: $simple-white;
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    }
+}
+
+.game-show-nav {
+    display: flex;
+    margin-top: 8%;
+    justify-content: center;
+}

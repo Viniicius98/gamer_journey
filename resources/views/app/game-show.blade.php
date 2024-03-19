@@ -5,7 +5,7 @@
 @section('content')
 
     <div class="game-show-edit">
-        <div class="informacao-pagina">
+        <div class="page-information">
             <div class="card w-50 ">
                 <div class="card-header">
                     {{$game->game}}

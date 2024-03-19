@@ -1,0 +1,24 @@
+@import "../mixins";
+@import "../colors";
+@import "../fonts";
+
+.game-show-edit {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: $primary-font;
+    font-size: 12px;
+    font-weight: bold;
+    h5 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+.page-information {
+    @include flexCenter;
+    margin-top: 3%;
+    p {
+        color: #333;
+    }
+}

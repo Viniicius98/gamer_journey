@@ -9,12 +9,20 @@
 //Components
 @import "_components/logo.scss";
 
-//Views
+//Views-Site
 @import "site/index.scss";
 @import "site/about-us.scss";
 @import "site/contact.scss";
 @import "site/login.scss";
 @import "site/register.scss";
+
+//Views-App
+@import "app/_partials/nav.scss";
+@import "app/home.scss";
+@import "app/my-games.scss";
+@import "app/register-game.scss";
+@import "app/game-show.scss";
+@import "app/game-edit.scss";
 
 body {
     margin: 0;

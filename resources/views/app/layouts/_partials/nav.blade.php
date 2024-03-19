@@ -2,7 +2,7 @@
     <ul class="nav nav-underline ">
         @if (request()->routeIs('game.show'))
             <li class="nav-item ">
-                <a class="nav-link {{ request()->routeIs('game.index') ? 'active' : '' }}" href="{{ route('game.create',['game'=>$game]) }}">Meus Jogos</a>
+                <a class="nav-link {{ request()->routeIs('game.index') ? 'active' : '' }}" href="{{ route('game.index',['game'=>$game]) }}">Meus Jogos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ request()->routeIs('game.create') ? 'active' : '' }}" href="{{ route('game.create')}}">Adicionar Jogo</a>
