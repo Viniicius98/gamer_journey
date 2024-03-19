@@ -4,7 +4,7 @@
 
 Gamer Journey é uma aplicação web em fase de desenvolvimento, criada em PHP com Laravel, com o objetivo de ser o lugar ideal para registrar e manter um histórico organizado de todos os jogos zerados ao longo da sua jornada gamer. Este projeto está em constante evolução, e novas funcionalidades estão sendo adicionadas para aprimorar a experiência do usuário.
 
-## Funcionalidades Principais (Atualmente em Desenvolvimento)
+## Funcionalidades Principais
 
 -   **Registro de Jogos Zerados:** Adicione detalhes sobre os jogos que você concluiu, incluindo título, plataforma, data de conclusão e quaisquer notas adicionais.
 -   ![image](https://github.com/Viniicius98/gamer_journey/assets/91093655/f3158194-7e51-45d6-9bd0-d2a2bf51be8c)
