@@ -43,10 +43,7 @@ Gamer Journey é uma aplicação web criada em PHP com Laravel, com o objetivo d
 
 ## Tecnologias Utilizadas
 
--   PHP
--   Laravel
--   MySQL
--   Bootstrap
+![PHP](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/64px-PHP-logo.svg.png) ![Laravel](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/64px-Laravel.svg.png) ![MySQL](https://img.icons8.com/ios-filled/50/000000/mysql-logo.png) ![Bootstrap](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/64px-Bootstrap_logo.svg.png)
 
 ## Licença
 
